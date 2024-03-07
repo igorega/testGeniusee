@@ -1,0 +1,18 @@
+body {
+	background-color: var(--color-white);
+	color: var(--color-black);
+	font-family: var(--font-main);
+	font-size: 1.6rem;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+strong {
+	font-weight: 700;
+}
+
+::selection {
+	color: var(--color-white);
+	background-color: var(--color-black);
+}
