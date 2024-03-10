@@ -11,7 +11,7 @@ form.form(
 
 		.form__field
 			.form__group
-				label.form__label(for='fname') First name
+				label.form__label(for='fname') First name *
 
 				input.form__input(
 					type='text'
@@ -21,10 +21,10 @@ form.form(
 					required
 				)
 
-				span.form__error-msg First name required
+				span.form__error-msg required field
 
 			.form__group
-				label.form__label(for='lname') Last name
+				label.form__label(for='lname') Last name *
 
 				input.form__input(
 					type='text'
@@ -34,7 +34,7 @@ form.form(
 					required
 				)
 
-				span.form__error-msg Last name required
+				span.form__error-msg required field
 
 	// row
 	.form__row
@@ -42,20 +42,19 @@ form.form(
 
 		.form__field
 			.form__group
-				label.form__label(for='email') Email for receipt
+				label.form__label(for='email') Email for receipt (optional)
 
 				input.form__input(
 					type='email'
 					name='email'
 					id='email'
 					placeholder='Email for receipt'
-					required
 				)
 
-				span.form__error-msg Email required
+				span.form__error-msg not valid field
 
 			.form__group
-				label.form__label(for='phone') Phone numbers
+				label.form__label(for='phone') Phone numbers *
 
 				input.form__input(
 					type='tel'
@@ -65,14 +64,15 @@ form.form(
 					required
 				)
 
-				span.form__error-msg Phone numbers required
+				span.form__error-msg required field (10 digits)
 
 		.form__field
 			.form__group
-				label.form__label(for='country') Country
+				label.form__label(for='country') Country *
 
 				.form__wrap
 					select.form__select(
+						type='text'
 						name='country'
 						id='country'
 						required
@@ -96,10 +96,10 @@ form.form(
 							option(value='Ecuador') Ecuador
 							option(value='Uruguay') Uruguay
 
-					span.form__error-msg Country required
+					span.form__error-msg required field (select country)
 
 			.form__group
-				label.form__label(for='address') Address
+				label.form__label(for='address') Address *
 
 				input.form__input(
 					type='text'
@@ -109,7 +109,7 @@ form.form(
 					required
 				)
 
-				span.form__error-msg Address required
+				span.form__error-msg required field
 
 	// row
 	.form__row
@@ -117,7 +117,7 @@ form.form(
 
 		.form__field.form__field--diff
 			.form__group.form__group--card
-				label.form__label(for='card') Credit card
+				label.form__label(for='card') Credit card *
 
 				input.form__input(
 					type='tel'
@@ -127,10 +127,10 @@ form.form(
 					required
 				)
 
-				span.form__error-msg Credit card required
+				span.form__error-msg required field (16 digits)
 
 			.form__group.form__group--cvv
-				label.form__label(for='cvv') CVV2 code
+				label.form__label(for='cvv') CVV2 code *
 
 				input.form__input(
 					type='tel'
@@ -140,7 +140,7 @@ form.form(
 					required
 				)
 
-				span.form__error-msg CVV2 code required
+				span.form__error-msg required field (3 digits)
 
 		.form__checkbox
 			input.form__checkbox-input(
@@ -150,7 +150,7 @@ form.form(
 				required
 			)
 
-			label.form__checkbox-label(for='checkbox') Agreement with terms of use
+			label.form__checkbox-label() Agreement with terms of use
 
 			span.form__error-msg Need to confirm
 

@@ -1,2 +1,2 @@
 // components
-import '@/components/form/form';
+import '@/components/form/js/form';

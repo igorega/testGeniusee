@@ -147,9 +147,8 @@ $formFieldMinWidth: 20rem;
 		display: inline-flex;
 		align-items: center;
 		justify-self: flex-start;
-		padding: 1.5rem 0;
+		padding: 1.5rem 0 .2rem;
 		gap: 1rem;
-		cursor: pointer;
 		user-select: none;
 
 		&-input,

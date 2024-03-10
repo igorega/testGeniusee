@@ -5,15 +5,7 @@
 // base
 @import 'base/vars';
 @import 'base/base';
+@import 'base/common';
 
 // components
 @import '../components/form/form';
-
-.main {
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding: 6rem 1.5rem;
-}
